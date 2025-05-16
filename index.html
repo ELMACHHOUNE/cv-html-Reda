@@ -1,176 +1,422 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Reda EL MACHHOUNE</title>
+    <title>Reda EL MACHHOUNE</title>
     <meta
       name="keywords"
       content="elmachhoune, el machhoune, CV, curriculum vitae, english teacher"
     />
     <meta
       name="description"
-      content="CV professionnel de Reda EL MACHHOUNE - Enseignant d'anglais"
+      content="Professional CV of Reda EL MACHHOUNE - English Teacher"
     />
     <link rel="shortcut icon" href="./reda.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1E3A8A", // Deep blue for main elements
+              secondary: "#3B82F6", // Bright blue for interactive elements
+              accent: "#31709D", // Professional blue for highlights
+              dark: "#0F172A", // Dark background
+              light: "#F8FAFC", // Light text
+              surface: "#1E293B", // Card background
+              muted: "#94A3B8", // Muted text
+              highlight: "#60A5FA", // Highlight color for hover states
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <div class="container">
-      <!-- En-tête avec informations personnelles -->
-      <header class="header">
-        <div class="profile-info">
-          <h1>Reda EL MACHHOUNE</h1>
-          <h2>A TEACHER OF ENGLISH LANGUAGE</h2>
-          <p class="summary">
-            A dedicated English student with strong teaching experience and
-            skills in IT and commerce. Seeking opportunities to apply and expand
-            my knowledge in a professional environment.
-          </p>
-          <div class="contact-info">
-            <p>📧 rida20elmachhoune@gmail.com</p>
-            <p>📱 +212 642 582410</p>
-            <p>📍 Rabat-Salé-Kénitra</p>
+  <body
+    class="bg-gradient-to-br from-dark via-primary to-dark min-h-screen text-light"
+  >
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+      <!-- Creative Header with Diagonal Split -->
+      <div class="relative mb-16">
+        <div class="absolute inset-0 bg-accent/90 transform -skew-y-6"></div>
+        <header class="relative z-10 py-16 px-8">
+          <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6">
+              <h1
+                class="text-5xl md:text-6xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-light via-highlight to-accent"
+              >
+                Reda EL MACHHOUNE
+              </h1>
+              <h2 class="text-2xl md:text-3xl font-light text-light/95">
+                A TEACHER OF ENGLISH LANGUAGE
+              </h2>
+              <p class="text-lg text-light/90 leading-relaxed max-w-2xl">
+                A dedicated English student with strong teaching experience and
+                skills in IT and commerce. Seeking opportunities to apply and
+                expand my knowledge in a professional environment.
+              </p>
+              <div class="flex flex-wrap gap-6">
+                <a
+                  href="mailto:rida20elmachhoune@gmail.com"
+                  class="flex items-center gap-2 text-light/90 hover:text-highlight transition-colors group"
+                >
+                  <span
+                    class="text-xl group-hover:scale-110 transition-transform"
+                    >📧</span
+                  >
+                  <span>rida20elmachhoune@gmail.com</span>
+                </a>
+                <a
+                  href="tel:+212642582410"
+                  class="flex items-center gap-2 text-light/90 hover:text-highlight transition-colors group"
+                >
+                  <span
+                    class="text-xl group-hover:scale-110 transition-transform"
+                    >📱</span
+                  >
+                  <span>+212 642 582410</span>
+                </a>
+                <p class="flex items-center gap-2 text-light/90">
+                  <span class="text-xl">📍</span>
+                  <span>Kenitra</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-highlight shadow-2xl transform hover:scale-105 transition-all duration-300 hover:rotate-3"
+            >
+              <img
+                src="./reda.jpg"
+                alt="Photo of Reda EL MACHHOUNE"
+                class="w-full h-full object-cover"
+              />
+            </div>
           </div>
-        </div>
-        <div class="profile-photo">
-          <img src="./reda.jpg" alt="Photo de Reda EL MACHHOUNE" />
-        </div>
-      </header>
+        </header>
+      </div>
 
-      <!-- Formation académique -->
-      <section class="section">
-        <h2>Formation</h2>
-        <div class="education-item">
-          <h3>Degree in Education</h3>
-          <p class="school">ESEF KENITRA</p>
-          <p class="date">Septembre 2021 - Présent</p>
-          <p>Kenitra, Morocco - English Studies</p>
-        </div>
-        <div class="education-item">
-          <h3>Second Baccalaureate</h3>
-          <p class="school">Spécialité : Sciences Humaines</p>
-          <p class="date">Juin 2021</p>
-        </div>
-        <div class="education-item">
-          <h3>Commerce Diploma</h3>
-          <p class="school">ISTA SMARA</p>
-          <p class="date">Septembre 2019 - Juin 2021</p>
-          <p>Technicien spécialisé</p>
-        </div>
-        <div class="education-item">
-          <h3>Baccalauréat</h3>
-          <p class="school">Spécialité : Chimie et Physique</p>
-          <p class="date">Juin 2019</p>
-        </div>
-      </section>
+      <!-- Two Column Layout for Main Content -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Left Column -->
+        <div class="lg:col-span-2 space-y-8">
+          <!-- Professional Experience -->
+          <section
+            class="bg-surface/80 backdrop-blur-sm rounded-2xl p-8 transform hover:scale-[1.01] transition-all duration-300 border border-highlight/20"
+          >
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+              <span class="text-highlight">⚡</span>
+              Professional Experience
+            </h2>
+            <div class="space-y-8">
+              <div
+                class="relative pl-8 border-l-2 border-highlight hover:translate-x-2 transition-transform duration-300"
+              >
+                <div
+                  class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-highlight"
+                ></div>
+                <h3 class="text-xl font-semibold text-highlight">
+                  Technical Support
+                </h3>
+                <p class="font-medium text-light/95">Foundever</p>
+                <p class="text-highlight/90 italic">
+                  January 2024 - October 2024
+                </p>
+                <p class="text-muted">Rabat</p>
+                <p class="text-light/90 mt-2">
+                  Working at Foundver's call center in Rabat, I faced the
+                  challenge of balancing the demands of the job with the stress
+                  that often came with it. One of the key skills I developed was
+                  managing pressure while maintaining a calm, professional
+                  demeanor with customers.
+                </p>
+              </div>
+              <div
+                class="relative pl-8 border-l-2 border-highlight hover:translate-x-2 transition-transform duration-300"
+              >
+                <div
+                  class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-highlight"
+                ></div>
+                <h3 class="text-xl font-semibold text-highlight">
+                  Technical Support
+                </h3>
+                <p class="font-medium text-light/95">WEngage</p>
+                <p class="text-highlight/90 italic">
+                  August 2023 - October 2023
+                </p>
+                <p class="text-muted">Rabat</p>
+                <p class="text-light/90 mt-2">
+                  I worked with a CDD contract in wengage call center in rabat.
+                  One of the most rewarding aspects of my journey at wengage has
+                  been the opportunity for professional growth.
+                </p>
+              </div>
+              <div
+                class="relative pl-8 border-l-2 border-highlight hover:translate-x-2 transition-transform duration-300"
+              >
+                <div
+                  class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-highlight"
+                ></div>
+                <h3 class="text-xl font-semibold text-highlight">
+                  Digital Marketing Instructor
+                </h3>
+                <p class="font-medium text-light/95">GoMyCode</p>
+                <p class="text-highlight/90 italic">August 2023 - Present</p>
+                <p class="text-muted">Rabat</p>
+                <p class="text-light/90 mt-2">
+                  Part-time instructor teaching Digital Marketing and social
+                  media management.
+                </p>
+              </div>
+              <div
+                class="relative pl-8 border-l-2 border-highlight hover:translate-x-2 transition-transform duration-300"
+              >
+                <div
+                  class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-highlight"
+                ></div>
+                <h3 class="text-xl font-semibold text-highlight">Teacher</h3>
+                <p class="font-medium text-light/95">
+                  Moulay Smail High School
+                </p>
+                <p class="text-highlight/90 italic">September 2023 - Present</p>
+                <p class="text-muted">Kenitra</p>
+                <p class="text-light/90 mt-2">
+                  Part of my teaching career, conducting weekly training in a
+                  public school, making me more competent and flexible with
+                  different categories of people.
+                </p>
+              </div>
+              <div
+                class="relative pl-8 border-l-2 border-highlight hover:translate-x-2 transition-transform duration-300"
+              >
+                <div
+                  class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-highlight"
+                ></div>
+                <h3 class="text-xl font-semibold text-highlight">
+                  Sales Representative
+                </h3>
+                <p class="font-medium text-light/95">MR-TECHNOLOGIES</p>
+                <p class="text-highlight/90 italic">January 2022 - July 2022</p>
+                <p class="text-muted">Rabat, Kenitra, Sale, Temara</p>
+                <p class="text-light/90 mt-2">
+                  Successfully managed to sell a significant number of products,
+                  achieving important sales targets.
+                </p>
+              </div>
+              <div
+                class="relative pl-8 border-l-2 border-highlight hover:translate-x-2 transition-transform duration-300"
+              >
+                <div
+                  class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-highlight"
+                ></div>
+                <h3 class="text-xl font-semibold text-highlight">
+                  Administrator
+                </h3>
+                <p class="font-medium text-light/95">
+                  Developpement Informatique 'darija' maroc
+                </p>
+                <p class="text-highlight/90 italic">2019 - Present</p>
+              </div>
+            </div>
+          </section>
 
-      <!-- Expérience professionnelle -->
-      <section class="section">
-        <h2>Expérience Professionnelle</h2>
-        <div class="experience-item">
-          <h3>Technical Support</h3>
-          <p class="company">Foundever</p>
-          <p class="date">Janvier 2024 - Octobre 2024</p>
-          <p class="location">Rabat</p>
-          <p>
-            Working at Foundver's call center in Rabat, I faced the challenge of
-            balancing the demands of the job with the stress that often came
-            with it. One of the key skills I developed was managing pressure
-            while maintaining a calm, professional demeanor with customers.
-          </p>
+          <!-- Education -->
+          <section
+            class="bg-surface/80 backdrop-blur-sm rounded-2xl p-8 transform hover:scale-[1.01] transition-all duration-300 border border-highlight/20"
+          >
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+              <span class="text-highlight">🎓</span>
+              Education
+            </h2>
+            <div class="space-y-6">
+              <div
+                class="relative pl-8 border-l-2 border-highlight hover:translate-x-2 transition-transform duration-300"
+              >
+                <div
+                  class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-highlight"
+                ></div>
+                <h3 class="text-xl font-semibold text-highlight">
+                  Master in Life Skills and Literary, Artistic, and
+                  Digital Creativity
+                </h3>
+                <p class="font-medium text-light/95">FLLA KENITRA</p>
+                <p class="text-highlight/90 italic">September 2024 - Present</p>
+                <p class="text-muted">Kenitra, Morocco - Master</p>
+              </div>
+              <div
+                class="relative pl-8 border-l-2 border-highlight hover:translate-x-2 transition-transform duration-300"
+              >
+                <div
+                  class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-highlight"
+                ></div>
+                <h3 class="text-xl font-semibold text-highlight">
+                  Degree in Education
+                </h3>
+                <p class="font-medium text-light/95">ESEF KENITRA</p>
+                <p class="text-highlight/90 italic">September 2021 - 2024</p>
+                <p class="text-muted">Kenitra, Morocco - English Studies</p>
+              </div>
+              <div
+                class="relative pl-8 border-l-2 border-highlight hover:translate-x-2 transition-transform duration-300"
+              >
+                <div
+                  class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-highlight"
+                ></div>
+                <h3 class="text-xl font-semibold text-highlight">
+                  Second Baccalaureate
+                </h3>
+                <p class="font-medium text-light/95">
+                  Specialization: Humanities
+                </p>
+                <p class="text-highlight/90 italic">June 2021</p>
+              </div>
+              <div
+                class="relative pl-8 border-l-2 border-highlight hover:translate-x-2 transition-transform duration-300"
+              >
+                <div
+                  class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-highlight"
+                ></div>
+                <h3 class="text-xl font-semibold text-highlight">
+                  Commerce Diploma
+                </h3>
+                <p class="font-medium text-light/95">ISTA SMARA</p>
+                <p class="text-highlight/90 italic">
+                  September 2019 - June 2021
+                </p>
+                <p class="text-muted">Specialized Technician</p>
+              </div>
+              <div
+                class="relative pl-8 border-l-2 border-highlight hover:translate-x-2 transition-transform duration-300"
+              >
+                <div
+                  class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-highlight"
+                ></div>
+                <h3 class="text-xl font-semibold text-highlight">
+                  Baccalaureate
+                </h3>
+                <p class="font-medium text-light/95">
+                  Specialization: Chemistry and Physics
+                </p>
+                <p class="text-highlight/90 italic">June 2019</p>
+              </div>
+            </div>
+          </section>
         </div>
-        <div class="experience-item">
-          <h3>Technical Support</h3>
-          <p class="company">WEngage</p>
-          <p class="date">Août 2023 - Octobre 2023</p>
-          <p class="location">Rabat</p>
-          <p>
-            I worked with a CDD contract in wengage call center in rabat. One of
-            the most rewarding aspects of my journey at wengage has been the
-            opportunity for professional growth.
-          </p>
-        </div>
-        <div class="experience-item">
-          <h3>Digital Marketing Instructor</h3>
-          <p class="company">GoMyCode</p>
-          <p class="date">Août 2023 - Présent</p>
-          <p class="location">Rabat</p>
-          <p>
-            Part-time instructor teaching Digital Marketing and social media
-            management.
-          </p>
-        </div>
-        <div class="experience-item">
-          <h3>Teacher</h3>
-          <p class="company">Moulay Smail High School</p>
-          <p class="date">Septembre 2023 - Présent</p>
-          <p class="location">Kenitra</p>
-          <p>
-            Part of my teaching career, conducting weekly training in a public
-            school, making me more competent and flexible with different
-            categories of people.
-          </p>
-        </div>
-        <div class="experience-item">
-          <h3>Seller</h3>
-          <p class="company">MR-TECHNOLOGIES</p>
-          <p class="date">Janvier 2022 - Juillet 2022</p>
-          <p class="location">Rabat, Kenitra, Sale, Temara</p>
-          <p>
-            Successfully managed to sell a significant number of products,
-            achieving important sales targets.
-          </p>
-        </div>
-        <div class="experience-item">
-          <h3>Admin</h3>
-          <p class="company">Developpement Informatique 'darija' maroc</p>
-          <p class="date">2019 - Présent</p>
-        </div>
-      </section>
 
-      <!-- Compétences -->
-      <section class="section">
-        <h2>Compétences</h2>
-        <div class="skills">
-          <div class="skill-category">
-            <h3>Techniques</h3>
-            <ul>
-              <li>Proficient in utilizing IT tools and software</li>
-              <li>Digital Marketing</li>
-              <li>Social Media Management</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <h3>Soft Skills</h3>
-            <ul>
-              <li>Excellent communication and interpersonal skills</li>
-              <li>Strong organizational and time management skills</li>
-              <li>Teaching and Training</li>
-              <li>Customer Service</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <h3>Langues</h3>
-            <ul>
-              <li>Anglais (Avancé)</li>
-              <li>Français</li>
-              <li>Arabe</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        <!-- Right Column -->
+        <div class="space-y-8">
+          <!-- Skills -->
+          <section
+            class="bg-surface/80 backdrop-blur-sm rounded-2xl p-8 transform hover:scale-[1.01] transition-all duration-300 border border-highlight/20"
+          >
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+              <span class="text-highlight">💡</span>
+              Skills
+            </h2>
+            <div class="space-y-6">
+              <div
+                class="bg-surface/50 p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:translate-y-[-4px] border border-highlight/10"
+              >
+                <h3 class="text-xl font-semibold text-highlight mb-4">
+                  Technical
+                </h3>
+                <ul class="space-y-3">
+                  <li class="flex items-center gap-3 text-light/90 group">
+                    <span
+                      class="text-highlight group-hover:scale-110 transition-transform"
+                      >▹</span
+                    >
+                    Proficient in utilizing IT tools and software
+                  </li>
+                  <li class="flex items-center gap-3 text-light/90 group">
+                    <span
+                      class="text-highlight group-hover:scale-110 transition-transform"
+                      >▹</span
+                    >
+                    Digital Marketing
+                  </li>
+                  <li class="flex items-center gap-3 text-light/90 group">
+                    <span
+                      class="text-highlight group-hover:scale-110 transition-transform"
+                      >▹</span
+                    >
+                    Social Media Management
+                  </li>
+                </ul>
+              </div>
 
-      <!-- Activités parascolaires -->
-      <section class="section">
-        <h2>Activités Parascolaires</h2>
-        <div class="activities">
-          <div class="activity-item">
-            <h3>Activité 1</h3>
-            <p>Description de l'activité et des responsabilités</p>
-          </div>
+              <div
+                class="bg-surface/50 p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:translate-y-[-4px] border border-highlight/10"
+              >
+                <h3 class="text-xl font-semibold text-highlight mb-4">
+                  Soft Skills
+                </h3>
+                <ul class="space-y-3">
+                  <li class="flex items-center gap-3 text-light/90 group">
+                    <span
+                      class="text-highlight group-hover:scale-110 transition-transform"
+                      >▹</span
+                    >
+                    Excellent communication and interpersonal skills
+                  </li>
+                  <li class="flex items-center gap-3 text-light/90 group">
+                    <span
+                      class="text-highlight group-hover:scale-110 transition-transform"
+                      >▹</span
+                    >
+                    Strong organizational and time management skills
+                  </li>
+                  <li class="flex items-center gap-3 text-light/90 group">
+                    <span
+                      class="text-highlight group-hover:scale-110 transition-transform"
+                      >▹</span
+                    >
+                    Teaching and Training
+                  </li>
+                  <li class="flex items-center gap-3 text-light/90 group">
+                    <span
+                      class="text-highlight group-hover:scale-110 transition-transform"
+                      >▹</span
+                    >
+                    Customer Service
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="bg-surface/50 p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:translate-y-[-4px] border border-highlight/10"
+              >
+                <h3 class="text-xl font-semibold text-highlight mb-4">
+                  Languages
+                </h3>
+                <ul class="space-y-3">
+                  <li class="flex items-center gap-3 text-light/90 group">
+                    <span
+                      class="text-highlight group-hover:scale-110 transition-transform"
+                      >▹</span
+                    >
+                    English (Advanced)
+                  </li>
+                  <li class="flex items-center gap-3 text-light/90 group">
+                    <span
+                      class="text-highlight group-hover:scale-110 transition-transform"
+                      >▹</span
+                    >
+                    French
+                  </li>
+                  <li class="flex items-center gap-3 text-light/90 group">
+                    <span
+                      class="text-highlight group-hover:scale-110 transition-transform"
+                      >▹</span
+                    >
+                    Arabic
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
     </div>
   </body>
 </html>
